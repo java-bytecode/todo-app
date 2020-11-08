@@ -91,3 +91,23 @@ Angular Directives are specific things which add extended meaning to what is pre
 
 **ngIf** is another angular directive which displays the content of the element only if the assigned variable is true.
 
+## App Routing
+`app-routing.module.ts` is the module which handles the routes.
+
+`<router-outlet>` is the tag which enables the display of whatever the router is producing. It inserts whatever component that gets matched based on the current browser's URL.
+
+## Dependency Injection (DI)
+
+Angular takes in the built-in router and make it available in the component. This is called **"Dependency Injection"**.
+
+When a component wants to use another component. Then it is called a dependency.
+
+`navigate()` helps us to route to a specific page. 
+
+`this.router.navigate(['welcome'])`
+
+The first argument of the array is the page you want to navigate to.
+
+DI is a coding pattern in which a class asks for dependencies from external sources rather than creating them itself.
+
+

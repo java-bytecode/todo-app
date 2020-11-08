@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -12,7 +13,10 @@ export class LoginComponent implements OnInit {
   errorMessage = 'Invalid Credentials'
   invalidLogin = false
 
-  constructor() { }
+  // Angular takes in the built-in router and make it available here.
+  // This is called "Dependency Injection".
+  // When a component wants to use another component. Then it is called a dependency.
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -23,6 +27,8 @@ export class LoginComponent implements OnInit {
 
   handleLogin(){
     if (this.username == "cyber" && this.password == "abcd12345"){
+      // navigate() helps us to route to a specific page. The first argument of the array is the page you want to navigate to.
+      this.router.navigate(['welcome'])
       this.invalidLogin = false
     } else {
       this.invalidLogin = true
