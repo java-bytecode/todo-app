@@ -78,5 +78,16 @@ A module is a single file.
 
 **Event binding**: Data flows from the DOM to the component. When a DOM event, such as a click, is triggered, the bound method from the component is called. For example: `<button (click)="printUserName()">Hi</button>` - The `printUserName()` method will be called so it needs to be defined in the component class. We use parentheses for event binding.
 
+## Component Property && Component Event
 
+**Component Property** = Variables in a component
+**Component Event** = Methods in a component
+
+## Angular Directives
+
+Angular Directives are specific things which add extended meaning to what is present in HTML. 
+
+**ngModel** is tied to the **value** attribute of the HTML elements like textarea, input etc.
+
+**ngIf** is another angular directive which displays the content of the element only if the assigned variable is true.
 
