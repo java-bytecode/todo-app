@@ -98,7 +98,7 @@ Angular Directives are specific things which add extended meaning to what is pre
 
 ## Dependency Injection (DI)
 
-Angular takes in the built-in router and make it available in the component. This is called **"Dependency Injection"**.
+Angular takes in the built-in router and makes it available in the component. This is called **"Dependency Injection"**.
 
 When a component wants to use another component. Then it is called a dependency.
 
@@ -110,4 +110,13 @@ The first argument of the array is the page you want to navigate to.
 
 DI is a coding pattern in which a class asks for dependencies from external sources rather than creating them itself.
 
+## ActivatedRoute
+
+Route which is currently active. Inject this dependency through Angular Dependency Injection Framework.
+
+```constructor(private route: ActivatedRoute) { }```
+
+```console.log(this.route.snapshot.params['name'])```
+Snapshot gives the snapshot of the parameters which are passed in.
+Params is a map. `name` is the key which we had defined in the `app-routing.module.ts`. It indicates what will be the name of the parameter being passed in.
 

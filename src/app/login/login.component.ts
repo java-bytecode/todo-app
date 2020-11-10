@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit {
   handleLogin(){
     if (this.username == "cyber" && this.password == "abcd12345"){
       // navigate() helps us to route to a specific page. The first argument of the array is the page you want to navigate to.
-      this.router.navigate(['welcome'])
+      this.router.navigate(['welcome', this.username])
       this.invalidLogin = false
     } else {
       this.invalidLogin = true
