@@ -91,7 +91,13 @@ Angular Directives are specific things which add extended meaning to what is pre
 
 ***ngIf** is another angular directive which displays the content of the element only if the assigned variable is true.
 
-***ngFor** To loop around a list
+***ngFor** To loop around a list.
+
+**routerLink** is the attribute provided by angular to navigate to different components without reloading the page.
+
+**Href** is the basic attribute provided by Html to navigate through pages which reloads the page on click.
+
+Major difference between both is that href **kills the state of the current page** where as routerLink **doesnt lose the state of the page**.
 
 ## App Routing
 `app-routing.module.ts` is the module which handles the routes.
