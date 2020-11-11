@@ -87,12 +87,16 @@ A module is a single file.
 
 Angular Directives are specific things which add extended meaning to what is present in HTML. 
 
-**ngModel** is tied to the **value** attribute of the HTML elements like textarea, input etc.
+**[(ngModel)]** is tied to the **value** attribute of the HTML elements like textarea, input etc.
 
-**ngIf** is another angular directive which displays the content of the element only if the assigned variable is true.
+***ngIf** is another angular directive which displays the content of the element only if the assigned variable is true.
+
+***ngFor** To loop around a list
 
 ## App Routing
 `app-routing.module.ts` is the module which handles the routes.
+
+**Order of routes is important**
 
 `<router-outlet>` is the tag which enables the display of whatever the router is producing. It inserts whatever component that gets matched based on the current browser's URL.
 
