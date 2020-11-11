@@ -81,6 +81,7 @@ A module is a single file.
 ## Component Property && Component Event
 
 **Component Property** = Variables in a component
+
 **Component Event** = Methods in a component
 
 ## Angular Directives
