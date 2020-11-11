@@ -145,8 +145,23 @@ An angular application is made up of number of angular modules.
 Angular module is a grouping of building blocks like angular components, directives of the angular application.
 
 ```@NgModule``` is the decoration used in the Angular Module.
+
 ```bootstrap: [AppComponent]``` AppComponent is the bootstrap component. It is the component which is loaded when the module is loaded.
 
 It introduces the concept of reusability. To reuse a component from a module you can import the module and then use that specific component.
 
 Any .ts or .js file is a javascript module. A javascript module contains a number of classes, methods etc.
+
+## Root Module && Root Component
+
+The module which gets bootstrapped first is the root module.
+
+The component which gets bootstrapped first the root module.
+
+The application launches by bootstrapping the root AppModule, which is also referred to as an entryComponent. Among other things, the bootstrapping process creates the component(s) listed in the bootstrap array and inserts each one into the browser DOM.
+
+Each bootstrapped component is the base of its own tree of components. Inserting a bootstrapped component usually triggers a cascade of component creations that fill out that tree.
+
+While you can put more than one component tree on a host web page, most applications have only one component tree and bootstrap a single root component.
+
+This one root component is usually called AppComponent and is in the root module's bootstrap array.
