@@ -130,3 +130,10 @@ Route which is currently active. Inject this dependency through Angular Dependen
 Snapshot gives the snapshot of the parameters which are passed in.
 Params is a map. `name` is the key which we had defined in the `app-routing.module.ts`. It indicates what will be the name of the parameter being passed in.
 
+## Pipes
+
+Use pipes to transform strings, currency amounts, dates, and other data for display. Pipes are simple functions you can use in template expressions to accept an input value and return a transformed value.
+
+Example,
+
+```{{ todo.targetDate | date | uppercase }}```
