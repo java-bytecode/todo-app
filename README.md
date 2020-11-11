@@ -137,3 +137,16 @@ Use pipes to transform strings, currency amounts, dates, and other data for disp
 Example,
 
 ```{{ todo.targetDate | date | uppercase }}```
+
+## Angular Module
+
+An angular application is made up of number of angular modules.
+
+Angular module is a grouping of building blocks like angular components, directives of the angular application.
+
+```@NgModule``` is the decoration used in the Angular Module.
+```bootstrap: [AppComponent]``` AppComponent is the bootstrap component. It is the component which is loaded when the module is loaded.
+
+It introduces the concept of reusability. To reuse a component from a module you can import the module and then use that specific component.
+
+Any .ts or .js file is a javascript module. A javascript module contains a number of classes, methods etc.
