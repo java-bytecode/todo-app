@@ -50,7 +50,7 @@ Example, `ng build`, `ng test`, `ng e2e` etc.
 
 Taking the value from the data in the component (.component.ts) and displaying in the template (.component.html).
 
-## Components & Modules
+## Components && Modules
 
 Every angular component (@Component) belongs to a module in the angular app (@NgModule).
 
@@ -98,7 +98,7 @@ Angular Directives are specific things which add extended meaning to what is pre
 
 **Href** is the basic attribute provided by Html to navigate through pages which reloads the page on click.
 
-Major difference between both is that href **kills the state of the current page** where as routerLink **doesnt lose the state of the page**.
+Major difference between both is that href **kills the state of the current page** where as routerLink **doesn't lose the state of the page**.
 
 ## App Routing
 `app-routing.module.ts` is the module which handles the routes.
