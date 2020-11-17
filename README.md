@@ -166,3 +166,15 @@ Each bootstrapped component is the base of its own tree of components. Inserting
 While you can put more than one component tree on a host web page, most applications have only one component tree and bootstrap a single root component.
 
 This one root component is usually called AppComponent and is in the root module's bootstrap array.
+
+## Service
+
+If you want to create a logic common across all the components you create a **service**.
+
+```
+@Injectable({
+  ...
+})
+```
+
+Make this component available for dependency injection (DI).
