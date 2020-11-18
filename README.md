@@ -178,3 +178,11 @@ If you want to create a logic common across all the components you create a **se
 ```
 
 Make this component available for dependency injection (DI).
+
+## Session Storage
+
+Data in `sessionStorage` object is cleared when the page session ends.
+Each tab in the browser creates a new session.
+
+
+
